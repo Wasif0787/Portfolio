@@ -3,16 +3,27 @@ import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, desc }) => {
+const ProjectCard = ({ imgUrl, title, desc ,gitUrl,siteUrl}) => {
     return (
         <div>
-            <div className='h-52 md:h-72 rounded-t-xl relative group' style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
-                <div className='overlay flex items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
-                    <Link href={gitUrl} className='h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
-                        <CodeBracketIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#ADB7BE] cursor-pointer group-hover/link:text-white" />
+            <div
+                className="group rounded-t-xl h-52 md:h-72 bg-center bg-cover relative overflow-hidden w-80 md:w-full"
+                style={{ backgroundImage: `url(${imgUrl})` }}
+                alt={title}
+            >
+                <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
+                    <Link
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        href={siteUrl}
+                        className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white mr-4 group/link"
+                    >
+                        <EyeIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                     </Link>
                     <Link
-                        href="/"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        href={gitUrl}
                         className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                     >
                         <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />

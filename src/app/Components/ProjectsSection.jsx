@@ -10,8 +10,8 @@ const projectData = [
         desc: "Technology : MERN",
         image: "/images/Projects/FullStack/threads.png",
         tag: ["All", "FullStack"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/Threads-Clone",
+        siteUrl: "https://threads-backend-kzv5.onrender.com/"
     },
     {
         id: 2,
@@ -19,8 +19,8 @@ const projectData = [
         desc: "Technology : HTML,CSS,JS,EJS,NodeJS,MongoDB",
         image: "/images/Projects/FullStack/blog.png",
         tag: ["All", "FullStack"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/blog-v3",
+        siteUrl: "https://blog-v3-68i7.onrender.com/"
     },
     {
         id: 3,
@@ -28,8 +28,8 @@ const projectData = [
         desc: "Technology : HTML,CSS,JS,EJS,NodeJS,MongoDB with User Authentication",
         image: "/images/Projects/FullStack/secrets.png",
         tag: ["All", "FullStack"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/SecretsFinder",
+        siteUrl: "https://secret-message-4uap.onrender.com/"
     },
     {
         id: 4,
@@ -37,8 +37,8 @@ const projectData = [
         desc: "Technology : HTML,CSS,PHP,MySQL",
         image: "/images/Projects/FullStack/sms.png",
         tag: ["All", "FullStack"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/School-Management-System",
+        siteUrl: "https://student-management-system-wasif.000webhostapp.com/"
     },
     {
         id: 5,
@@ -46,8 +46,8 @@ const projectData = [
         desc: "Technology : HTML,CSS,JS,EJS,MongoDB,NodeJS",
         image: "/images/Projects/FullStack/toDO.png",
         tag: ["All", "FullStack"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/To-Do-List-v2",
+        siteUrl: "https://to-do-list-v2-e7vn.onrender.com/"
     },
     {
         id: 6,
@@ -55,8 +55,8 @@ const projectData = [
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/currencyConvertor.png",
         tag: ["All", "FrontEnd"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/chai-aur-react/tree/main/06currencyConvertor",
+        siteUrl: "https://currency-convertor-101.netlify.app/"
     },
     {
         id: 7,
@@ -64,8 +64,8 @@ const projectData = [
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/passwordGenerator.png",
         tag: ["All", "FrontEnd"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/chai-aur-react/tree/main/05passwordGenerator",
+        siteUrl: "https://password-generatot.netlify.app/"
     },
     {
         id: 7,
@@ -73,8 +73,8 @@ const projectData = [
         desc: "Technology : HTML,CSS,JS",
         image: "/images/Projects/FrontEnd/simon.png",
         tag: ["All", "FrontEnd"],
-        gitUrl: "/",
-        siteUrl: "/"
+        gitUrl: "https://github.com/Wasif0787/Simon-Game",
+        siteUrl: "https://wasif0787.github.io/Simon-Game/"
     }
 ]
 
@@ -88,8 +88,8 @@ const ProjectsSection = () => {
     )
     return (
         <>
-            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
-            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+            <h2 id='projects' className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
+            <div className='text-white flex flex-row justify-center items-center gap-2 py-6 mb-8'>
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag==="All"}/>
                 <ProjectTag onClick={handleTagChange} name="FullStack" isSelected={tag==="FullStack"}/>
                 <ProjectTag onClick={handleTagChange} name="FrontEnd" isSelected={tag==="FrontEnd"}/>
