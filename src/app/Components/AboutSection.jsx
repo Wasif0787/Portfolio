@@ -57,11 +57,11 @@ const AboutSection = () => {
         <Image className="mb-4 md:mb-0" src="/images/about-section.jpg" width={500} height={500} alt="about" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl text-white font-bold mb-4 ">ABOUT ME</h2>
-          <p className="text-base lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam eligendi quae saepe provident, voluptates ipsam nobis praesentium quos, enim deleniti eos veritatis in nam vel. Esse ut voluptate, ad sed iste qui necessitatibus aut quibusdam laboriosam suscipit odio voluptates consectetur repellat aperiam. Doloremque deserunt sunt non. Doloribus, voluptate saepe? Recusandae labore quas repellat distinctio et? Distinctio sapiente quam accusantium tempora!</p>
+          <p className="text-base lg:text-lg"> Hi, I&apos;m Wasif Hussain, a student studying B.Tech CSE in Kolkata, West Bengal, India. I&apos;m good at using the MERN stack for web development. I also understand Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOPs). I enjoy learning new things and staying updated on the latest in technology. I&apos;m excited to contribute my skills to the field of computer science and make a positive impact.</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
-            <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>Certification</TabButton>
+            {/* <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>Certification</TabButton> */}
           </div>
             <div className="mt-8">{TAB_DATA.find((t)=>t.id===tab).content}</div>
         </div>
