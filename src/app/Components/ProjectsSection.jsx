@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag'
 
 const projectData = [
     {
@@ -14,7 +16,7 @@ const projectData = [
     {
         id: 2,
         title: "Blog Page",
-        desc: "Technology : HTML,CSS,Bootstrap,JS,EJS,NodeJS,MongoDB",
+        desc: "Technology : HTML,CSS,JS,EJS,NodeJS,MongoDB",
         image: "/images/Projects/FullStack/blog.png",
         tag: ["All", "FullStack"],
         gitUrl: "/",
@@ -50,7 +52,7 @@ const projectData = [
     {
         id: 6,
         title: "Currency Convertor",
-        desc: "Technology : ReactJS",
+        desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/currencyConvertor.png",
         tag: ["All", "FrontEnd"],
         gitUrl: "/",
@@ -59,7 +61,7 @@ const projectData = [
     {
         id: 7,
         title: "Password Generator",
-        desc: "Technology : ReactJS",
+        desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/passwordGenerator.png",
         tag: ["All", "FrontEnd"],
         gitUrl: "/",
@@ -77,17 +79,24 @@ const projectData = [
 ]
 
 const ProjectsSection = () => {
+    const [tag, setTag] = useState("All")
+    const handleTagChange = (newTag) => {
+        setTag(newTag)
+    }
+    const filteredProjects = projectData.filter((project)=>
+        project.tag.includes(tag)
+    )
     return (
         <>
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-                <button>All</button>
-                <button>FullStack</button>
-                <button>Frontend</button>
+                <ProjectTag onClick={handleTagChange} name="All" isSelected={tag==="All"}/>
+                <ProjectTag onClick={handleTagChange} name="FullStack" isSelected={tag==="FullStack"}/>
+                <ProjectTag onClick={handleTagChange} name="FrontEnd" isSelected={tag==="FrontEnd"}/>
             </div>
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-                {projectData.map((project) => (
-                    <ProjectCard key={project.id} title={project.title} desc={project.desc} imgUrl={project.image} gitUrl={project.gitUrl} siteUrl={project.siteUrl} />
+                {filteredProjects.map((project,index) => (
+                    <ProjectCard key={index} title={project.title} desc={project.desc} imgUrl={project.image} gitUrl={project.gitUrl} siteUrl={project.siteUrl} />
                 ))}
             </div>
         </>
