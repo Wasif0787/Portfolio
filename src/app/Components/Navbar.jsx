@@ -33,7 +33,7 @@ const Navbar = () => {
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          WASIF
         </Link>
         
         <div className="block md:hidden">
