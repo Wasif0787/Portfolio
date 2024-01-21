@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
     const downloadCV = () => {
         const link = document.createElement('a');
-        const driveLink = 'https://drive.google.com/file/d/1aNUC1Ts8rvOOY2B6PHu70VFfTaovsmjV/view?usp=drive_link'; // Replace with your Google Drive link
+        const driveLink = 'https://drive.google.com/file/d/1OtYEBtPaiIoyQK2zgG8YwWThmuK85gjX/view?usp=drive_link'; // Replace with your Google Drive link
         link.href = `${driveLink}?export=download`;
         link.download = 'WasifHussainResume.pdf'; // Replace with the desired filename
         document.body.appendChild(link);
