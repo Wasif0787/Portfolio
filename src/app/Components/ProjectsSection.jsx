@@ -43,11 +43,11 @@ const projectData = [
     {
         id: 5,
         title: "To-DO",
-        desc: "Technology : HTML,CSS,JS,EJS,MongoDB,NodeJS",
-        image: "/images/Projects/FullStack/toDO.png",
-        tag: ["All", "FullStack"],
-        gitUrl: "https://github.com/Wasif0787/To-Do-List-v2",
-        siteUrl: "https://to-do-list-v2-e7vn.onrender.com/"
+        desc: "Technology : ReactJs,Tailwind,Redux",
+        image: "/images/Projects/FrontEnd/toDo.png",
+        tag: ["All", "FrontEnd"],
+        gitUrl: "https://github.com/Wasif0787/chai-aur-react/tree/main/reduxToolkitToDo",
+        siteUrl: "https://to-do-redux-toolkit.netlify.app/"
     },
     {
         id: 6,
@@ -83,19 +83,19 @@ const ProjectsSection = () => {
     const handleTagChange = (newTag) => {
         setTag(newTag)
     }
-    const filteredProjects = projectData.filter((project)=>
+    const filteredProjects = projectData.filter((project) =>
         project.tag.includes(tag)
     )
     return (
         <>
             <h2 id='projects' className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6 mb-8'>
-                <ProjectTag onClick={handleTagChange} name="All" isSelected={tag==="All"}/>
-                <ProjectTag onClick={handleTagChange} name="FullStack" isSelected={tag==="FullStack"}/>
-                <ProjectTag onClick={handleTagChange} name="FrontEnd" isSelected={tag==="FrontEnd"}/>
+                <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
+                <ProjectTag onClick={handleTagChange} name="FullStack" isSelected={tag === "FullStack"} />
+                <ProjectTag onClick={handleTagChange} name="FrontEnd" isSelected={tag === "FrontEnd"} />
             </div>
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-                {filteredProjects.map((project,index) => (
+                {filteredProjects.map((project, index) => (
                     <ProjectCard key={index} title={project.title} desc={project.desc} imgUrl={project.image} gitUrl={project.gitUrl} siteUrl={project.siteUrl} />
                 ))}
             </div>
