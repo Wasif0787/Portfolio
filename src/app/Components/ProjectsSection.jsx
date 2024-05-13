@@ -42,6 +42,24 @@ const projectData = [
     },
     {
         id: 5,
+        title: "Covid Tracker",
+        desc: "Technology : React.js, Typescript",
+        image: "/images/Projects/FrontEnd/covid.png",
+        tag: ["All", "FrontEnd"],
+        gitUrl: "https://github.com/Wasif0787/Covid-Tracker",
+        siteUrl: "https://covid-tracker-wasif.netlify.app/"
+    },
+    {
+        id: 6,
+        title: "Contact Management",
+        desc: "Technology : React.js, Typescript, Redux",
+        image: "/images/Projects/FrontEnd/cms.png",
+        tag: ["All", "FrontEnd"],
+        gitUrl: "https://github.com/Wasif0787/Contact-Management-System",
+        siteUrl: "https://cms-redux.netlify.app/"
+    },
+    {
+        id: 7,
         title: "To-DO",
         desc: "Technology : ReactJs,Tailwind,Redux",
         image: "/images/Projects/FrontEnd/toDo.png",
@@ -50,7 +68,7 @@ const projectData = [
         siteUrl: "https://to-do-redux-toolkit.netlify.app/"
     },
     {
-        id: 6,
+        id: 8,
         title: "Currency Convertor",
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/currencyConvertor.png",
@@ -59,7 +77,7 @@ const projectData = [
         siteUrl: "https://currency-convertor-101.netlify.app/"
     },
     {
-        id: 7,
+        id: 9,
         title: "Password Generator",
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/passwordGenerator.png",
@@ -68,14 +86,15 @@ const projectData = [
         siteUrl: "https://password-generatot.netlify.app/"
     },
     {
-        id: 7,
+        id: 10,
         title: "Simon Game",
         desc: "Technology : HTML,CSS,JS",
         image: "/images/Projects/FrontEnd/simon.png",
         tag: ["All", "FrontEnd"],
         gitUrl: "https://github.com/Wasif0787/Simon-Game",
         siteUrl: "https://wasif0787.github.io/Simon-Game/"
-    }
+    },
+
 ]
 
 const ProjectsSection = () => {

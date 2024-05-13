@@ -16,6 +16,7 @@ const AboutSection = () => {
           <li>HLML</li>
           <li>CSS</li>
           <li>Javascript</li>
+          <li>Typescript</li>
           <li>SQL</li>
           <li>MongoDB</li>
           <li>Express</li>
@@ -63,7 +64,7 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
             {/* <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>Certification</TabButton> */}
           </div>
-            <div className="mt-8">{TAB_DATA.find((t)=>t.id===tab).content}</div>
+          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
       </div>
     </section>
