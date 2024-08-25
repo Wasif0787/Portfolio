@@ -12,18 +12,20 @@ const AboutSection = () => {
       id: "skills",
       content: (
         <ul className="list-disc pl-2">
-          <li>Java</li>
-          <li>HLML</li>
+          <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
           <li>Typescript</li>
+          <li>React.js</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>EJS</li>
           <li>SQL</li>
           <li>MongoDB</li>
-          <li>Express</li>
-          <li>React JS</li>
-          <li>Node.JS</li>
-          <li>EJS</li>
+          <li>Java</li>
         </ul>
+
       )
     },
     {
@@ -36,11 +38,11 @@ const AboutSection = () => {
       )
     },
     {
-      title: "Certification",
-      id: "certification",
+      title: "Experience",
+      id: "experience",
       content: (
         <ul className="list-disc pl-2">
-          <li>XYZ</li>
+          <li>Solvative- Full Stack Developer Intern</li>
         </ul>
       )
     }
@@ -62,7 +64,7 @@ const AboutSection = () => {
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
-            {/* <TabButton selectTab={() => handleTabChange("certification")} active={tab === "certification"}>Certification</TabButton> */}
+            <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>Experience</TabButton>
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>

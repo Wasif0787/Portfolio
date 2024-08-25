@@ -29,9 +29,9 @@ const HeroSection = () => {
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>Your Friendly Neighbourhood Web Developer.Trying to do better.</p>
                     <div>
-                        <button className="bg-gradient-to-br w-full sm:w-fit from-primary-500  to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4 ">
+                        <Link href={"/#contact"} className="bg-gradient-to-br w-full sm:w-fit from-primary-500  to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4 ">
                             Hire Me
-                        </button>
+                        </Link>
                         <button className="mt-4 mb-4 bg-gradient-to-br w-full sm:w-fit from-primary-500  to-secondary-500 px-1 py-1  text-white rounded-full">
                             <Link target="_blank" href={cvUrl}
                                 rel="noopener noreferrer" className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
