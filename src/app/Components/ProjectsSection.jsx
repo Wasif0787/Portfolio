@@ -6,6 +6,15 @@ import ProjectTag from './ProjectTag'
 const projectData = [
     {
         id: 1,
+        title: "ImageFusion.ai",
+        desc: "Technology : Next.js",
+        image: "/images/Projects/FullStack/imagefusion.png", // Make sure the correct image path is used
+        tag: ["All", "FullStack"],
+        gitUrl: "https://github.com/Wasif0787/Clloudinary-SAAS",
+        siteUrl: "https://imageaifusion.vercel.app/"
+    },
+    {
+        id: 2,
         title: "Threads Clone",
         desc: "Technology : MERN",
         image: "/images/Projects/FullStack/threads.png",
@@ -14,7 +23,7 @@ const projectData = [
         siteUrl: "https://threads-backend-kzv5.onrender.com/"
     },
     {
-        id: 2,
+        id: 3,
         title: "Blog Page",
         desc: "Technology : HTML,CSS,JS,EJS,NodeJS,MongoDB",
         image: "/images/Projects/FullStack/blog.png",
@@ -23,7 +32,7 @@ const projectData = [
         siteUrl: "https://blog-v3-68i7.onrender.com/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Secrets Keeper",
         desc: "Technology : HTML,CSS,JS,EJS,NodeJS,MongoDB with User Authentication",
         image: "/images/Projects/FullStack/secrets.png",
@@ -32,7 +41,7 @@ const projectData = [
         siteUrl: "https://secret-message-4uap.onrender.com/"
     },
     {
-        id: 4,
+        id: 5,
         title: "Student Management System",
         desc: "Technology : HTML,CSS,PHP,MySQL",
         image: "/images/Projects/FullStack/sms.png",
@@ -41,7 +50,7 @@ const projectData = [
         siteUrl: "https://student-management-system-wasif.000webhostapp.com/"
     },
     {
-        id: 5,
+        id: 6,
         title: "Covid Tracker",
         desc: "Technology : React.js, Typescript",
         image: "/images/Projects/FrontEnd/covid.png",
@@ -50,7 +59,7 @@ const projectData = [
         siteUrl: "https://covid-tracker-wasif.netlify.app/"
     },
     {
-        id: 6,
+        id: 7,
         title: "Contact Management",
         desc: "Technology : React.js, Typescript, Redux",
         image: "/images/Projects/FrontEnd/cms.png",
@@ -59,7 +68,7 @@ const projectData = [
         siteUrl: "https://cms-redux.netlify.app/"
     },
     {
-        id: 7,
+        id: 8,
         title: "To-DO",
         desc: "Technology : ReactJs,Tailwind,Redux",
         image: "/images/Projects/FrontEnd/toDo.png",
@@ -68,7 +77,7 @@ const projectData = [
         siteUrl: "https://to-do-redux-toolkit.netlify.app/"
     },
     {
-        id: 8,
+        id: 9,
         title: "Currency Convertor",
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/currencyConvertor.png",
@@ -77,7 +86,7 @@ const projectData = [
         siteUrl: "https://currency-convertor-101.netlify.app/"
     },
     {
-        id: 9,
+        id: 10,
         title: "Password Generator",
         desc: "Technology : ReactJS, Tailwind",
         image: "/images/Projects/FrontEnd/passwordGenerator.png",
@@ -86,16 +95,16 @@ const projectData = [
         siteUrl: "https://password-generatot.netlify.app/"
     },
     {
-        id: 10,
+        id: 11,
         title: "Simon Game",
         desc: "Technology : HTML,CSS,JS",
         image: "/images/Projects/FrontEnd/simon.png",
         tag: ["All", "FrontEnd"],
         gitUrl: "https://github.com/Wasif0787/Simon-Game",
         siteUrl: "https://wasif0787.github.io/Simon-Game/"
-    },
+    }
+];
 
-]
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState("All")

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ imgUrl, title, desc ,gitUrl,siteUrl}) => {
+const ProjectCard = ({ imgUrl, title, desc, gitUrl, siteUrl }) => {
     return (
         <div>
             <div
@@ -13,7 +13,7 @@ const ProjectCard = ({ imgUrl, title, desc ,gitUrl,siteUrl}) => {
             >
                 <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
                     <Link
-                        target="_blank" 
+                        target="_blank"
                         rel="noopener noreferrer"
                         href={siteUrl}
                         className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white mr-4 group/link"
@@ -21,7 +21,7 @@ const ProjectCard = ({ imgUrl, title, desc ,gitUrl,siteUrl}) => {
                         <EyeIcon className="h-10 w-10 text-[#ADB7BE] group-hover/link:text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                     </Link>
                     <Link
-                        target="_blank" 
+                        target="_blank"
                         rel="noopener noreferrer"
                         href={gitUrl}
                         className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
