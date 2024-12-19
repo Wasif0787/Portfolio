@@ -20,7 +20,7 @@ const projectData = [
         image: "/images/Projects/FullStack/threads.png",
         tag: ["All", "FullStack"],
         gitUrl: "https://github.com/Wasif0787/Threads-Clone",
-        siteUrl: "https://threads-backend-kzv5.onrender.com/"
+        siteUrl: "https://threads-wasif.netlify.app/"
     },
     {
         id: 3,
@@ -102,6 +102,15 @@ const projectData = [
         tag: ["All", "FrontEnd"],
         gitUrl: "https://github.com/Wasif0787/Simon-Game",
         siteUrl: "https://wasif0787.github.io/Simon-Game/"
+    },
+    {
+        id: 12,
+        title: "DocuParser",
+        desc: "Technology : Nextjs, Google API",
+        image: "/images/Projects/FrontEnd/docuParser.png",
+        tag: ["All", "FrontEnd"],
+        gitUrl: "https://github.com/Wasif0787/docu-parser",
+        siteUrl: "https://docuparser.netlify.app/"
     }
 ];
 
