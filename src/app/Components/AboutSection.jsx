@@ -33,7 +33,7 @@ const AboutSection = () => {
       id: "education",
       content: (
         <ul className="list-disc pl-2">
-          <li>B.Tech CSE at Aliah University, Kolkata</li>
+          <li>B.Tech CSE at Aliah University, Kolkata (2020-2024)</li>
         </ul>
       )
     },
@@ -42,7 +42,13 @@ const AboutSection = () => {
       id: "experience",
       content: (
         <ul className="list-disc pl-2">
-          <li>Solvative- Full Stack Developer Intern</li>
+          <li>
+            Solvative
+            <ul>
+              <li>Full Time : December 2024 - present</li>
+              <li>Internship : July 2024 - November 2024</li>
+            </ul>
+          </li>
         </ul>
       )
     }
@@ -60,7 +66,13 @@ const AboutSection = () => {
         <Image className="mb-4 md:mb-0" src="/images/about-section.jpg" width={500} height={500} alt="about" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl text-white font-bold mb-4 ">ABOUT ME</h2>
-          <p className="text-base lg:text-lg"> Hi, I&apos;m Wasif Hussain, a student studying B.Tech CSE in Kolkata, West Bengal, India. I&apos;m good at using the MERN stack for web development. I also understand Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOPs). I enjoy learning new things and staying updated on the latest in technology. I&apos;m excited to contribute my skills to the field of computer science and make a positive impact.</p>
+          <p className="text-base lg:text-lg">
+            Hi, I’m Wasif Hussain!
+            <br />
+            A passionate Full Stack Developer with expertise in crafting seamless web applications. I specialize in building scalable backend architectures and intuitive user interfaces using technologies like Next.js, Node.js, and MongoDB. With a knack for solving complex problems and a dedication to clean, efficient code, I enjoy turning ideas into impactful digital solutions.
+            <br />
+            Let’s create something amazing together!
+          </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
