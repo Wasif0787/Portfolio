@@ -22,10 +22,10 @@ const AboutSection = () => {
           <li>Express</li>
           <li>EJS</li>
           <li>SQL</li>
+          <li>Python</li>
           <li>MongoDB</li>
           <li>Java</li>
         </ul>
-
       )
     },
     {
@@ -42,10 +42,16 @@ const AboutSection = () => {
       id: "experience",
       content: (
         <ul className="list-disc pl-2">
-          <li>
+          <li className="font-bold">
+            Tata Consultancy Services
+            <ul className="font-normal">
+              <li>Full Time : April 2025 - present</li>
+            </ul>
+          </li>
+          <li className="font-bold">
             Solvative
-            <ul>
-              <li>Full Time : December 2024 - present</li>
+            <ul className="font-normal">
+              <li>Full Time : December 2024 - April 2025</li>
               <li>Internship : July 2024 - November 2024</li>
             </ul>
           </li>
@@ -69,7 +75,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             Hi, I’m Wasif Hussain!
             <br />
-            A passionate Full Stack Developer with expertise in crafting seamless web applications. I specialize in building scalable backend architectures and intuitive user interfaces using technologies like Next.js, Node.js, and MongoDB. With a knack for solving complex problems and a dedication to clean, efficient code, I enjoy turning ideas into impactful digital solutions.
+            Software Engineer at TCS with experience in building scalable web applications across frontend and backend. Skilled in React, Next.js, TypeScript, Node.js, and modern web technologies, with a strong focus on performance optimization and writing clean, maintainable code. Contributed to building platforms used by 200+ users, improving system efficiency and user experience, and passionate about problem-solving while continuously strengthening Data Structures & Algorithms.
             <br />
             Let’s create something amazing together!
           </p>
